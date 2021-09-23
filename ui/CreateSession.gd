@@ -54,7 +54,7 @@ func _on_HostButton_pressed():
 	hosting = true
 	
 	peer = WebSocketClient.new()
-	peer.connect_to_url("ws://localhost:5555", PoolStringArray(["ludus"]), true)
+	peer.connect_to_url("ws://23.239.18.31:5555", PoolStringArray(["ludus"]), true)
 	get_tree().set_network_peer(peer)
 
 

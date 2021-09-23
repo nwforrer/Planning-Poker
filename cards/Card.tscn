@@ -8,14 +8,14 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 24.3978, 32.5444 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=7]
 font_data = ExtResource( 5 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=8]
 size = 12
 font_data = ExtResource( 5 )
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=9]
 length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:position")
@@ -54,7 +54,7 @@ tracks/2/keys = {
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=10]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:position")
 tracks/0/interp = 1
@@ -148,7 +148,7 @@ margin_top = -29.3322
 margin_right = 21.3219
 margin_bottom = -5.33213
 theme = ExtResource( 3 )
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 7 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "1"
 align = 1
@@ -162,7 +162,7 @@ margin_left = -20.1575
 margin_top = 3.29066
 margin_right = 20.8425
 margin_bottom = 28.2906
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 8 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "1 day"
 align = 1
@@ -188,8 +188,8 @@ __meta__ = {
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "idle"
-anims/hover = SubResource( 4 )
-anims/idle = SubResource( 5 )
+anims/hover = SubResource( 9 )
+anims/idle = SubResource( 10 )
 anims/selected = SubResource( 6 )
 
 [connection signal="input_event" from="." to="." method="_on_Card_input_event"]
