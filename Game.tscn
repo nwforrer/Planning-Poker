@@ -88,7 +88,7 @@ __meta__ = {
 }
 
 [node name="PlayTimer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 15.0
 one_shot = true
 
 [connection signal="pressed" from="UI/Control/StartButton" to="." method="_on_StartButton_pressed"]
